@@ -31,7 +31,11 @@
             // Wait for Cordova to load
             //
             document.addEventListener("deviceready", onDeviceReady, false);
-            StatusBar.backgroundColorByHexString("#3498db");
+
+            window.onload = function () {
+                StatusBar.backgroundColorByHexString("#3498db");
+            };
+
             
             // Cordova is ready
             //
@@ -78,7 +82,7 @@
         </script>
     </head>
     <body style="background-color:#3498db">
-        <p><a href="#" onclick="setColor('red'); return false;">Red Status Bar</a></p>
+        <p><a href="#" onclick="StatusBar.backgroundColorByHexString('#3498db'); return false;">Red Status Bar</a></p>
         
     </body>
 </html>
