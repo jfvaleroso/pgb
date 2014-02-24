@@ -35,9 +35,9 @@
             
             // Cordova is ready
             //
-            //function onDeviceReady() {
-            //	// add any initialization code here
-            //}
+            function onDeviceReady() {
+            	// add any initialization code here
+            }
         
         	//function showStatusBar(show) {
             //	if (show) {
@@ -53,9 +53,9 @@
             //	StatusBar.overlaysWebView(g_overlay);
         	//}
         
-        	//function setColor(inColor) {
-            //	g_color = inColor
-            //	StatusBar.backgroundColorByName(g_color);
+        	function setColor(inColor) {
+            	g_color = inColor
+            	StatusBar.backgroundColorByName(g_color);
         
             //	if (g_color === "black")
             //    	StatusBar.styleLightContent();
@@ -78,7 +78,7 @@
         </script>
     </head>
     <body style="background-color:#3498db">
-    
+        <p><a href="#" onclick="setColor('red'); return false;">Red Status Bar</a></p>
         
     </body>
 </html>
