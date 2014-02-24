@@ -25,8 +25,8 @@
         <script type="text/javascript" charset="utf-8" src="statusbar.js"></script>
         <script type="text/javascript" charset="utf-8">
             
-            //var g_overlay = false;
-            //var g_color = "white";
+            var g_overlay = false;
+            var g_color = "white";
             
             // Wait for Cordova to load
             //
@@ -39,41 +39,41 @@
             	// add any initialization code here
             }
         
-        	//function showStatusBar(show) {
-            //	if (show) {
-            //		StatusBar.show();
-            //    	StatusBar.overlaysWebView(g_overlay)
-            //	}
-            //	else
-            //    	StatusBar.hide();
-        	//}
+        	function showStatusBar(show) {
+            	if (show) {
+            		StatusBar.show();
+                	StatusBar.overlaysWebView(g_overlay)
+            	}
+            	else
+                	StatusBar.hide();
+        	}
         
-        	//function overlayWebView(isOverlay) {
-            //	g_overlay = isOverlay;
-            //	StatusBar.overlaysWebView(g_overlay);
-        	//}
+        	function overlayWebView(isOverlay) {
+            	g_overlay = isOverlay;
+            	StatusBar.overlaysWebView(g_overlay);
+        	}
         
         	function setColor(inColor) {
             	g_color = inColor
             	StatusBar.backgroundColorByName(g_color);
         
-            //	if (g_color === "black")
-            //    	StatusBar.styleLightContent();
-        	//}
+            	if (g_color === "black")
+                	StatusBar.styleLightContent();
+        	}
 
-        	//function defaultStyle() {
-            //	g_color = "white"
-            //	StatusBar.styleDefault();
-            //	StatusBar.backgroundColorByName(g_color);
-        	//}
+        	function defaultStyle() {
+            	g_color = "white"
+            	StatusBar.styleDefault();
+            	StatusBar.backgroundColorByName(g_color);
+        	}
         
-        	//function lightContent() {
-            //	StatusBar.styleLightContent();
-            //	if (g_color === "white") {
-            //    	g_color = "black";
-            //    	StatusBar.backgroundColorByName(g_color);
-            //	}
-        	//}
+        	function lightContent() {
+            	StatusBar.styleLightContent();
+            	if (g_color === "white") {
+                	g_color = "black";
+                	StatusBar.backgroundColorByName(g_color);
+            	}
+        	}
 
         </script>
     </head>
